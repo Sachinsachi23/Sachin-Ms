@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-forest-950: #051408;
+  --color-forest-900: #0a2310;
+  --color-forest-800: #143d1c;
+  --color-forest-700: #1e5628;
+  --color-earth-200: #e5e0d8;
+  --color-earth-100: #f5f2ed;
+  
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-forest-950 text-earth-100 antialiased overflow-x-hidden;
+  }
+}
+
+.cinematic-gradient {
+  background: linear-gradient(to bottom, transparent, rgba(5, 20, 8, 0.8), #051408);
+}
+
+.reel-scroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.reel-item {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #051408;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e5628;
+  border-radius: 10px;
+}

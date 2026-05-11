@@ -1,0 +1,16 @@
+{
+  "name": "StayNest India",
+  "description": "A premium homestay booking platform focused on nature stays, coffee estates, and authentic Indian travel experiences with a cinematic reel-based discovery.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "Firebase Authentication",
+    "Cloud Firestore",
+    "Google Maps Integration",
+    "AI Travel Assistant",
+    "Multi-language Support (English, Hindi, Kannada)"
+  ]
+}
